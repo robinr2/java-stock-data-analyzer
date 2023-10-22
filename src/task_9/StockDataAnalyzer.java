@@ -68,7 +68,7 @@ public class StockDataAnalyzer {
         String currentDateString = currentLineArray[0];
         Date currentDate = dateFormatter.parse(currentDateString);
 
-        // Future improvement: getYear() can be replaced by Calendar.
+        // Future improvement: getYear() + 1900 can be replaced by Calendar.
         int currentYear = currentDate.getYear() + 1900;
         if (currentYear != YEAR) {
           continue;
